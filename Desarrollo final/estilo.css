@@ -1,0 +1,26 @@
+@font-face {
+  font-family: matiasrosas;
+  src: url(Fonts/made-soulmaze.otf);
+}
+@font-face {
+  font-family: DragandNav;
+  src: url(Fonts/Mightyline.ttf);
+}
+h1
+{font-family: matiasrosas;}
+
+.dragaAbajo
+{font-family: dragandNav;}
+
+body
+.sobremi 
+{ font-family: matiasrosas;color: brown;}
+
+.Bienvenida h2
+{font-family: matiasrosas;color: brown;} 
+
+.fondoBlanco {background-color: white;}
+
+header
+{display: inline-block;}
+.navegacion {display: inline-block; list-style: none; text-decoration: none;}
