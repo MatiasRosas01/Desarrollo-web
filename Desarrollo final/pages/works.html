@@ -5,52 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matias Rosas</title>
-    <link rel="shortcut icon" href="Fonts/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="shortcut icon" href="Fonts/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../estilo.css" />
     <script
       src="https://kit.fontawesome.com/d6f136d242.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <h1>Matias Rosas</h1>
+    <div class="fondoNegro">
+      <header>
+        <nav>
+          <div class="titulo white">
+            <a class="white" href="../index.html"><h1>Matias Rosas</h1></a>
+          </div>
+          <!-- Nav bar -->
+          <div>
+            <ul class="navegacion">
+              <li>
+                <a class="itemnavegacion white" href="sobremi.html">sobre mi</a>
+              </li>
+              <li><p class="itemnavegacion white">work</p></li>
+              <li>
+                <a class="itemnavegacion white" href="experiencia.html"
+                  >Experiencia</a
+                >
+              </li>
+              <li>
+                <a class="itemnavegacion white" href="technosolution.html"
+                  >Techno solution</a
+                >
+              </li>
+            </ul>
+            <div class="navegacionMobile">
+              <div>
+                <a
+                  class="socialmedia white"
+                  href="https://www.instagram.com/mativalo/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  class="socialmedia white"
+                  href="https://www.facebook.com/MatiValo/"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a
+                  class="socialmedia white"
+                  href="https://www.linkedin.com/in/matiasrosas/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+              <div><i class="fa-solid fa-bars-staggered white"></i></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Cards -->
+      <div class="cardsContainer">
+        <div class="card">
+          <div class="cardtext">
+            <h2 class="textcard">Boscova</h2>
+            <p>
+              Un proyecto en equipo con compañeros de diferentes cursos de
+              Coderhouse Donde nos sumergimos en el mundo de la cerveza
+              artesanal
+            </p>
+            <a href="#">leer mas...</a>
+          </div>
+          <div class="cardimg yellowshadow">
+            <img src="../img/PortadaBOSCOVA.png" alt="boscova" />
+          </div>
         </div>
-        <div>
-          <ul>
-            <li><a href="sobremi.html">sobre mi</a></li>
-            <li>works</li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="technosolution.html">Techno solution</a></li>
-          </ul>
+        <div class="card">
+          <div class="cardtext">
+            <h2 class="textcard">Games Box</h2>
+            <p>
+              Proyecto hecho por jugadores para jugadores, una aplicación que
+              ayuda a los jugadores a conectar con sus juegos.
+            </p>
+            <a href="#">leer mas...</a>
+          </div>
+          <div class="cardimg redshadow">
+            <img src="../img/Mesa de trabajo 1.png" alt="gamebox" />
+          </div>
         </div>
-      </nav>
-    </header>
-    <div>
-    <img src="../img/frame4.png" alt="Boscova" />
-    <img src="../img/frame5.png" alt="gamesbox" />
-    <img src="../img/frame6.png" alt="animeFLv" />
-  </div>
-    <footer>
-      <div>
-        <h1>Drag</h1>
+        <div class="card">
+          <div class="cardtext">
+            <h2 class="textcard">AnimeFLV</h2>
+            <p>
+              Rediseño de la pagina de anime con el mayor catalogo del mundo
+              ayudando a los usuarios a que naveguen mejor de manera mas comoda
+            </p>
+            <a href="#">leer mas...</a>
+          </div>
+          <div class="cardimg blueshadow">
+            <img src="../img/Mesa de trabajo 1@2x.png" alt="animeflv" />
+          </div>
+        </div>
       </div>
-      <div>
-        <a href="https://www.instagram.com/mativalo/" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/MatiValo/" target="_blank"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/matiasrosas/" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </div>
-      <div>
-        <h1>HELLO</h1>
-      </div>
-    </footer>
+      <footer>
+        <div class="itemfooter white">
+          <h2 class="dragaAbajo">Drag</h2>
+        </div>
+
+        <!-- redes sociales y drag  -->
+
+        <div class="itemfooter redes">
+          <a
+            class="socialmedia white"
+            href="https://www.instagram.com/mativalo/"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            class="socialmedia white"
+            href="https://www.facebook.com/MatiValo/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            class="socialmedia white"
+            href="https://www.linkedin.com/in/matiasrosas/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="itemfooter"></div>
+      </footer>
+    </div>
   </body>
 </html>
