@@ -11,7 +11,9 @@
       src="https://kit.fontawesome.com/d6f136d242.js"
       crossorigin="anonymous"
     ></script>
+    <script src="Js/app.js"></script>
   </head>
+
   <body>
     <div class="fondoBlanco contenedorIndex">
       <header>
@@ -63,7 +65,31 @@
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
-            <div><i class="fa-solid fa-bars-staggered"></i></div>
+            <div>
+              <button id="botonMenu" onclick="abrirMenu()">
+                <i class="fa-solid fa-bars-staggered" id="barraMenu"></i>
+              </button>
+            </div>
+            <ul class="menuDesplegable" id="menuDesplegable">
+              <li>
+                <a class="itemnavegacion black" href="pages/sobremi.html"
+                  >sobre mi</a
+                >
+              </li>
+              <li>
+                <a class="itemnavegacion black" href="pages/works.html">work</a>
+              </li>
+              <li>
+                <a class="itemnavegacion black" href="pages/experiencia.html"
+                  >Experiencia</a
+                >
+              </li>
+              <li>
+                <a class="itemnavegacion black" href="pages/technosolution.html"
+                  >Techno solution</a
+                >
+              </li>
+            </ul>
           </div>
         </nav>
       </header>
