@@ -75,8 +75,12 @@ body {
 }
 .navegacion li {
   display: inline-block;
+  margin: 0 15px;
 }
-
+.navegacion ul {
+  display: inline-block;
+  margin: 0 15px;
+}
 .fondoNegro {
   background-color: black;
   background-image: url(img/backgroun.png);
@@ -84,9 +88,18 @@ body {
   min-height: 100%;
 }
 
-.titulo {
-  font-family: matiasrosas;
-  font-size: 19px;
+header .titulo {
+  cursor: pointer;
+  height: auto;
+  width: 70%;
+  transition: all;
+  justify-content: space-between;
+  padding: 5px 5%;
+  transition: all 0.8s;
+}
+
+.titulo img:hover {
+  transform: scale(1.2);
 }
 
 .itemfooter {
