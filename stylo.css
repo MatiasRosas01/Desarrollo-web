@@ -76,7 +76,7 @@ body h1 :hover .cursor {
   transform: scale(10);
 }
 body header .titulo {
-  cursor: cell;
+  cursor: pointer;
   height: auto;
   width: 70%;
   transition: all;
