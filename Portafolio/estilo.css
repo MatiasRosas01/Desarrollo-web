@@ -23,7 +23,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-h1 {
+* h1 {
   font-family: matiasrosas;
 }
 
@@ -37,6 +37,26 @@ body .sobremi {
   font-family: matiasrosas;
   color: brown;
 }
+
+/*cursor*/
+
+.cursor {
+  width: 60px;
+  height: 60px;
+  border: 5px #1690a0;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #232323;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  pointer-events: visibleFill;
+}
+
+h1 :hover .cursor {
+  transform: scale(10);
+}
+/* body y navbar */
+
 body {
   width: calc(100vw - (100vw - 100%));
   height: 100vh;
@@ -57,11 +77,32 @@ body {
   overflow: hidden;
 }
 .navegacion {
-  list-style: none;
-  text-align: end;
-  font-family: DragandNav;
-  font-size: 50px;
+  font-family: Navbarestilo;
+  font-size: 20px;
+  position: relative;
+  justify-content: right;
 }
+
+#navBar :hover {
+  transform-origin: 10%;
+}
+
+li {
+  list-style: none;
+}
+li a ::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #232323;
+  margin: auto;
+  display: block;
+}
+li a ::after :hover {
+  width: 100%;
+  transition: 0.3s linear;
+}
+
 .navegacion .itemnavegacion {
   text-decoration: none;
 }
@@ -81,6 +122,15 @@ body {
   display: inline-block;
   margin: 0 15px;
 }
+
+.navegacion :hover {
+  color: brown;
+  cursor: none;
+  transition: ease-out 100ms;
+}
+.itemnavegacion ::after {
+  transform: scale(5px);
+}
 .fondoNegro {
   background-color: black;
   background-image: url(img/backgroun.png);
@@ -95,11 +145,12 @@ header .titulo {
   transition: all;
   justify-content: space-between;
   padding: 5px 5%;
-  transition: all 0.8s;
+  transition: all 1.5s;
 }
 
 .titulo img:hover {
   transform: scale(1.2);
+  transition: ease-out 300ms;
 }
 
 .itemfooter {
@@ -109,8 +160,10 @@ header .titulo {
 .redes {
   margin-left: 69px;
 }
-.redes .socialmedia {
+.redes .socialmedia :hover {
   text-decoration: none;
+  transition: ease-in-out;
+  transform: scale(0.3s);
 }
 
 main {
@@ -220,6 +273,9 @@ main {
 .mostrar {
   display: flex !important;
 }
+
+/*navegacion movil */
+
 nav .navegacionMobile ul {
   list-style: none;
   display: none;
@@ -262,6 +318,7 @@ nav .navegacionMobile .white div i {
 }
 
 /*Experiencia*/
+
 main p .textoDescriptivo {
   font-family: Navbarstilo;
   font-size: 1rem;

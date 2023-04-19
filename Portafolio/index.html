@@ -4,45 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ETIQUETAS SEO-->
+    <meta
+      name="description"
+      content="Descubre mi portfolio como diseñador gráfico y UX UI.
+      Enfocado en branding y redes sociales. Creatividad personalizada para tus proyectos. ¡Contáctame hoy!"
+    />
+    <meta
+      name="keywords"
+      content="Diseñador gráfico, Diseñador UX UI,
+    Creación de branding, Manejo de redes sociales, Portfolio, Creatividad personalizada, Proyectos, Enfoque moderno, Objetivos de negocio, Contacto."
+    />
+    <!-- TITULO PAGINA-->
     <title>Matias Rosas</title>
     <link rel="shortcut icon" href="Fonts/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="estilo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylo.css" />
     <script
       src="https://kit.fontawesome.com/d6f136d242.js"
       crossorigin="anonymous"
     ></script>
-    <script src="Js/app.js"></script>
-  </head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <body>
+    <!-- COMIENZO HTML-->
+  </head>
+  <body onclick="playaudio()">
     <div class="fondoBlanco contenedorIndex">
       <header>
         <div class="titulo">
-          <h1><img src="img/logoportafolio_negro.png" alt="" /></h1>
+          <h1><img src="img/logotitulo-black.svg" alt="#" /></h1>
         </div>
 
-        <!-- Nav bar -->
+        <!-- NAVBAR -->
 
         <nav>
-          <ul class="navegacion">
-            <li>
-              <a class="itemnavegacion black" href="pages/sobremi.html"
-                >sobre mi</a
-              >
-            </li>
-            <li>
-              <a class="itemnavegacion black" href="pages/works.html">work</a>
-            </li>
-            <li>
-              <a class="itemnavegacion black" href="pages/experiencia.html"
-                >Experiencia</a
-              >
-            </li>
-            <li>
-              <a class="itemnavegacion black" href="pages/technosolution.html"
-                >Techno solution</a
-              >
-            </li>
+          <ul class="text-right navegacion">
+            <div id="navBar">
+              <li>
+                <a class="itemnavegacion black" href="pages/sobremi.html"
+                  >Sobre mi
+                </a>
+              </li>
+              <li>
+                <a class="itemnavegacion black" href="pages/works.html">Work</a>
+              </li>
+              <li>
+                <a class="itemnavegacion black" href="pages/experiencia.html"
+                  >Experiencia</a
+                >
+              </li>
+              <li>
+                <a class="itemnavegacion black" href="pages/technosolution.html"
+                  >Techno solution</a
+                >
+              </li>
+              <li>
+                <a class="itemnavegacion black" href="pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </div>
           </ul>
           <div class="navegacionMobile">
             <div>
@@ -89,10 +116,18 @@
                   >Techno solution</a
                 >
               </li>
+              <li>
+                <a class="itemnavegacion black" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
       </header>
+
+      <!-- DESCRIPCION -->
+
       <main>
         <div class="Bienvenida">
           <h2>Bienvenidos a mi Portfolio Soy matias Rosas</h2>
@@ -103,7 +138,7 @@
         </div>
       </main>
       <footer>
-        <!-- Redes Sociales y drag -->
+        <!-- REDES SOCIALES-->
 
         <div class="itemfooter">
           <h2 class="dragaAbajo">Drag</h2>
@@ -129,7 +164,9 @@
           ></a>
         </div>
         <div class="itemfooter"></div>
+        <div class="audio-player"></div>
       </footer>
     </div>
+    <script src="Js/app.js"></script>
   </body>
 </html>
