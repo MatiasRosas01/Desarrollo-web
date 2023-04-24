@@ -1,0 +1,26 @@
+body {
+  //INDEX & EXPERIENCIA
+  main {
+    height: 65%;
+    //INDEX
+    .Bienvenida {
+      h2 {
+        font-family: matiasrosas;
+        color: brown;
+        @include dFlex(center, "", "");
+        text-align: center;
+      }
+    }
+    .bienvenidaimg {
+      width: 100%;
+      @include dFlex(flex-end, "", "");
+    }
+    //EXPERIENCIA
+    .textoDescriptivo {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      padding-top: 10%;
+      font-size: large;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-const { delay } = require("framer-motion")
+const { delay, animate } = require("framer-motion")
 
 const cursor = document.querySelector('.cursor')
 

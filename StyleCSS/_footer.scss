@@ -1,0 +1,29 @@
+body {
+  //FOOTER
+  footer {
+    .itemfooter {
+      display: inline-block;
+      .dragaAbajo {
+        font-family: dragandNav;
+        font-size: 98px;
+        font-weight: normal;
+      }
+      audio {
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .redes {
+      margin-left: 69px;
+    }
+
+    audio {
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

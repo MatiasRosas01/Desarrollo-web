@@ -1,81 +1,3 @@
-@font-face {
-  font-family: matiasrosas;
-  src: url(Fonts/made-soulmaze.otf);
-}
-@font-face {
-  font-family: DragandNav;
-  src: url(Fonts/Mightyline.ttf);
-}
-@font-face {
-  font-family: textcards;
-  src: url(Fonts/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: Navbarestilo;
-  src: url(Fonts/Helvetica-Bold.ttf);
-}
-/* Inicio del Css*/
-/*index*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-* h1 {
-  font-family: matiasrosas;
-}
-
-body {
-  background-image: url(/img/Group\ 13.png);
-  width: calc(100vw - (100vw - 100%));
-  height: 100vh;
-}
-body .black {
-  color: black;
-}
-body .white {
-  color: white;
-}
-body .fondoBlanco {
-  background-color: white;
-  width: 100%;
-  height: 100%;
-}
-body .fondoNegro {
-  background-color: black;
-  background-image: url(img/backgroun.png);
-  width: 100%;
-  min-height: 100%;
-}
-body .mostrar {
-  display: flex !important;
-}
-body .contenedorIndex {
-  height: 100vh;
-  overflow: hidden;
-}
-body .singlepage {
-  height: 100%;
-}
-body .socialmedia :hover {
-  text-decoration: none;
-  transition: ease-in-out;
-  transform: scale(0.3s);
-}
-body .cursor {
-  width: 60px;
-  height: 60px;
-  border: 5px #1690a0;
-  border-radius: 50%;
-  position: absolute;
-  background-color: #232323;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  pointer-events: visibleFill;
-}
-body h1 :hover .cursor {
-  transform: scale(10);
-}
 body header .titulo {
   cursor: pointer;
   height: auto;
@@ -158,40 +80,146 @@ body .navegacionMobile ul li a {
   font-family: Navbarestilo;
 }
 
-main {
+body main {
   height: 65%;
 }
-main .Bienvenida h2 {
+body main .Bienvenida h2 {
   font-family: matiasrosas;
   color: brown;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-main .bienvenidaimg {
+body main .bienvenidaimg {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-main .textoDescriptivo {
+body main .textoDescriptivo {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   padding-top: 10%;
+  font-size: large;
+}
+
+body footer .itemfooter {
+  display: inline-block;
+}
+body footer .itemfooter .dragaAbajo {
+  font-family: dragandNav;
+  font-size: 98px;
+  font-weight: normal;
+}
+body footer .itemfooter audio {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body footer .redes {
+  margin-left: 69px;
+}
+body footer audio {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@font-face {
+  font-family: matiasrosas;
+  src: url(../Fonts/made-soulmaze.otf);
+}
+@font-face {
+  font-family: DragandNav;
+  src: url(../Fonts/Mightyline.ttf);
+}
+@font-face {
+  font-family: textcards;
+  src: url(../Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Navbarestilo;
+  src: url(../Fonts/Helvetica-Bold.ttf);
+}
+/* Inicio del Css*/
+/*index*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* h1 {
+  font-family: matiasrosas;
+}
+
+body {
+  background-image: url(/img/Group\ 13.png);
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+body .black {
+  color: black;
+}
+body .white {
+  color: white;
+}
+body .fondoBlanco {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+body .fondoNegro {
+  background-color: black;
+  background-image: url(../img/backgroun.png);
+  width: 100%;
+  min-height: 100%;
+}
+body .mostrar {
+  display: flex !important;
+}
+body .contenedorIndex {
+  height: 100vh;
+  overflow: hidden;
+}
+body .singlepage {
+  height: 100%;
+}
+body .socialmedia :hover {
+  text-decoration: none;
+  transition: ease-in-out;
+  transform: scale(0.3s);
+}
+body .cursor {
+  width: 60px;
+  height: 60px;
+  border: 5px #1690a0;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #232323;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  pointer-events: visibleFill;
+}
+body h1 :hover .cursor {
+  transform: scale(10);
 }
 
 .cardsContainer {
-  display: flex;
   padding: 20px 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   flex-direction: column;
+  width: 100%;
 }
 .cardsContainer .card {
   display: flex;
+  justify-content: space-evenly;
   padding: 20px;
   width: 70%;
-  justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   margin: 10px 0;
@@ -216,9 +244,9 @@ main .textoDescriptivo {
 }
 .cardsContainer .card .cardtext {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   order: 1;
-  justify-content: space-around;
   color: white;
   width: 40%;
   height: auto;
@@ -239,31 +267,7 @@ main .textoDescriptivo {
 }
 .sobremi p {
   font-family: Navbarestilo;
-  font-size: 1rem;
-}
-
-footer .itemfooter {
-  display: inline-block;
-}
-footer .itemfooter .dragaAbajo {
-  font-family: dragandNav;
-  font-size: 98px;
-  font-weight: normal;
-}
-footer .itemfooter audio {
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-footer .redes {
-  margin-left: 69px;
-}
-footer audio {
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  font-size: large;
 }
 
 @media (max-width: 768px) {
