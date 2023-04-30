@@ -22,5 +22,17 @@ body {
       padding-top: 10%;
       font-size: large;
     }
+    //TECNOSOLUTIONS
+    .contenedorImagen {
+      width: 100%;
+      height:50vh;
+      overflow: hidden;
+      @include dFlex(center,center,"");
+      img{
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
+    }
   }
 }
